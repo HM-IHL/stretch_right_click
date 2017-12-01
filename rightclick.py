@@ -6,12 +6,12 @@ import subprocess
 
 
 def rightclick():
-    print "Right Click Timer Starting. Pressed Flag=", pressed
+    #print "Right Click Timer Starting. Pressed Flag=", pressed
     timestop = time.time()
     endx, endy = m.position()  # Get the coordinates after time has elapsed
     deltatime = timestop - timestart
     if pressed == True and (abs(endx - startx) < 20) and (abs(endy - starty) < 20):
-		print 'Timer Finished - Right Click to be injected. Pressed Flag:', pressed, 'Deltatime=', deltatime, ' Delta X:', abs(endx - startx), ' Delta Y:', abs(endy - starty)
+		#print 'Timer Finished - Right Click to be injected. Pressed Flag:', pressed, 'Deltatime=', deltatime, ' Delta X:', abs(endx - startx), ' Delta Y:', abs(endy - starty)
 		subprocess.check_call(['xinput', '--disable', 'ELAN Touchscreen'])
 		m.press(endx, endy, 2)
 		m.release(endx, endy, 2)
@@ -20,7 +20,7 @@ def rightclick():
 #       Workaround: For multiple selected items in Nautilus you can bring context menu with two finger tap
 
 dev = InputDevice('/dev/input/event0')  # Run evtest to verify the correct ELAN event number.
-print(dev)  # Print the dev information
+#print(dev)  # Print the dev information
 m = PyMouse()
 
 # -------- Right Click Injection without finger relase (Code Begin)
@@ -43,9 +43,10 @@ for event in dev.read_loop():
     if event.type == 3 and event.code == 47 and event.value == 1: #ABS_MT_SLOT EVENT. VALUE 1 = 2 FINGERS
     # Two fingers tap brings right click menu. 
     # Bug : Works only the first time in Nautilus
-        print "Two Finger tap..."
+        #print "Two Finger tap..."
         x2, y2 = m.position()  # Get the pointer coordinates
         m.click(x2, y2, 2)
-        print "Two Finger tap Right Click Injected..."
+        #print "Two Finger tap Right Click Injected..."
 
 # --------  Right Click Injection without finger relase (Code End)
+y

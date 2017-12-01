@@ -31,6 +31,6 @@ if [ -d /etc/profile.d ]; then
     fi
   done
   unset i
-sudo sh /home/pi/calibration.sh
+sudo sh /stretch_right_click/calibration.sh
 sudo python /stretch_right_click/rightclick.py &
 fi

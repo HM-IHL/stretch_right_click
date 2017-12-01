@@ -1,6 +1,5 @@
 # stretch_right_click
 Right click for touchscreen on Raspbian stretch
-Python Touchscreen Right Click
 
 This project implements right click functionality using a touchscreen on an Raspbian Stretch system using the evdev library. Because of unity's deep integration with multitouch gestures, it disallows many other systems from implementing basic gestures that are missing from the default multitouch gestures. This script will not override unity's gestures, but fill in some missing ones, working alongside unity's multitouch system.
 

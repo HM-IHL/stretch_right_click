@@ -19,6 +19,7 @@ Change Directory:
 cd stretch_right_click
 
 Copy files to the correct directories:
+
 sudo cp profile /etc/profile
 
 this will allow you to reboot the pi and have the software setup for you

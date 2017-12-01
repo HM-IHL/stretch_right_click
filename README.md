@@ -18,19 +18,10 @@ Change Directory:
 
 cd stretch_right_click
 
-Now you can run the software:
+Copy files to the correct directories:
+sudo cp profile /etc/profile
 
-sudo python rightclick.py
-
-Optional: To make the code run at boot up, add to rc.local
-
-Edit rc.local:
-
-sudo nano /etc/rc.local
-
-Add the following line before exit 0:
-
-sudo python /stretch_right_click/rightclick.py
+this will allow you to reboot the pi and have the software setup for you
 
 Reboot the Pi:
 

@@ -7,15 +7,15 @@ This project implements right click functionality using a touchscreen on an Rasp
 
 install Dependencies:
 
-sudo apt-get install libts-bin evtest xinput python-dev python-pip
+*sudo apt-get install libts-bin evtest xinput python-dev python-pip*
 
 then:
 
-sudo pip install pyuserinput
+*sudo pip install pyuserinput*
 
 then:
 
-sudo pip install evdev
+*sudo pip install evdev*
 
 Change directory:
 

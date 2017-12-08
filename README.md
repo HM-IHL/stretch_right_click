@@ -39,4 +39,4 @@ Note: if the right click doesnt work, then run the following line to see which d
 
 ls /dev/input/event*
 
-then change line __ with the corrent event number.
+then change line 15 with the corrent event number.

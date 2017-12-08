@@ -13,6 +13,10 @@ then:
 
 sudo pip install pyuserinput
 
+then:
+
+sudo pip install evdev
+
 Change directory:
 
 cd /

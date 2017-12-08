@@ -34,3 +34,9 @@ this will allow you to reboot the pi and have the software setup for you
 Reboot the Pi:
 
 sudo reboot
+
+Note: if the right click doesnt work, then run the following line to see which devices are available:
+
+ls /dev/input/event*
+
+then change line __ with the corrent event number.

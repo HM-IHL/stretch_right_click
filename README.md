@@ -5,6 +5,14 @@ This project implements right click functionality using a touchscreen on an Rasp
 
 2 finger tap Setting up script
 
+install Dependencies:
+
+sudo apt-get install libts-bin evtest xinput python-dev python-pip
+
+then:
+
+sudo pip install pyuserinput
+
 Change directory:
 
 cd /

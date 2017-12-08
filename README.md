@@ -19,25 +19,25 @@ then:
 
 Change directory:
 
-cd /
+*cd /*
 
 Clone repository:
 
-sudo git clone https://github.com/HM-IHL/stretch_right_click.git
+*sudo git clone https://github.com/HM-IHL/stretch_right_click.git*
 
 Change Directory:
 
-cd stretch_right_click
+*cd stretch_right_click*
 
 Copy files to the correct directories:
 
-sudo cp profile /etc/profile
+*sudo cp profile /etc/profile*
 
 this will allow you to reboot the pi and have the software setup for you
 
 Reboot the Pi:
 
-sudo reboot
+*sudo reboot*
 
 Note: if the right click doesnt work, then run the following line to see which devices are available:
 
